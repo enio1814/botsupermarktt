@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BotSupermercado — Atendimento automático para mercados</title>
+  <meta name="description" content="Automatizamos pedidos, atendimento e integração com caixa para supermercados via WhatsApp." />
+  <style>
+    /* CSS simples e responsivo */
+    :root{--accent:#0d6efd;--bg:#fff;--muted:#666;}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:#111;line-height:1.5}
+    header{background:#f7f9ff;padding:28px 18px;border-bottom:1px solid #e6eefc}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+    .hero{display:flex;flex-wrap:wrap;gap:20px;align-items:center;padding:36px 0}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,24,60,0.06)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    nav{display:flex;gap:12px;align-items:center}
+    .plans{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .plan{flex:1;min-width:180px;padding:16px;border-radius:12px;border:1px solid #eef2ff}
+    footer{padding:24px 0;color:#666;font-size:14px;text-align:center;margin-top:28px}
+    @media(min-width:900px){h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <strong>BotSupermercado</strong>
+        <div style="font-size:12px;color:var(--muted)">Automação de atendimento e pedidos para mercados</div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+        <a class="btn" href="https://wa.me/5591999999999?text=Ol%C3%A1%20quero%20saber%20sobre%20o%20Bot" target="_blank">Fale no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div style="flex:1">
+        <h1>Atendimento automático para mercados — pedidos direto no WhatsApp</h1>
+        <p class="lead">Reduza filas, receba pedidos automatizados e integre com seu caixa. Instalamos e treinamos seu bot.</p>
+        <p style="margin-top:12px">
+          <a class="btn" href="#contato">Peça uma demonstração</a>
+        </p>
+      </div>
+      <div style="width:320px">
+        <div class="card">
+          <strong>Serviço rápido</strong>
+          <p style="margin:8px 0;color:var(--muted)">Demonstração em até 48h (agende pelo WhatsApp)</p>
+          <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+            <li>Atendimento 24/7</li>
+            <li>Pedidos no WhatsApp</li>
+            <li>Integração com caixa (opcional)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2>Funcionalidades</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Atendimento automático</h3>
+          <p style="color:var(--muted)">Respostas cadastrais, horário de funcionamento e perguntas frequentes.</p>
+        </div>
+        <div class="card">
+          <h3>Pedidos pelo WhatsApp</h3>
+          <p style="color:var(--muted)">Cliente monta pedido e recebe confirmação automática.</p>
+        </div>
+        <div class="card">
+          <h3>Integração com caixa</h3>
+          <p style="color:var(--muted)">Enviamos o pedido para o PDV/caixa (nas opções suportadas).</p>
+        </div>
+        <div class="card">
+          <h3>Relatórios</h3>
+          <p style="color:var(--muted)">Relatórios simples de vendas e pedidos via bot.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos">
+      <h2>Planos (exemplo)</h2>
+      <div class="plans">
+        <div class="plan card">
+          <h4>Básico</h4>
+          <p>Ideal para mercados pequenos — ativação rápida.</p>
+          <p><strong>R$ 0 (teste) / R$ 99,00</strong></p>
+          <a class="btn" href="#contato">Contratar</a>
+        </div>
+        <div class="plan card">
+          <h4>Pro</h4>
+          <p>Integração com caixa e relatórios.</p>
+          <p><strong>R$ 199,00</strong></p>
+          <a class="btn" href="#contato">Contratar</a>
+        </div>
+        <div class="plan card">
+          <h4>Premium</h4>
+          <p>Suporte prioritário e customizações.</p>
+          <p><strong>R$ 399,00</strong></p>
+          <a class="btn" href="#contato">Contratar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:18px">
+      <h2>Contato</h2>
+      <div class="card" style="padding:16px">
+        <p>📞 WhatsApp: <a href="https://wa.me/5591999999999" target="_blank">+55 91 99999-9999</a></p>
+        <p>✉️ Email: <a href="mailto:contato@botsupermercado.com">contato@botsupermercado.com</a></p>
+        <p>Ou descreva sua necessidade pelo WhatsApp que eu retorno com proposta.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="ano"></span> BotSupermercado — Automatize seu atendimento. <br>
+      <small style="color:var(--muted)">Site grátis com GitHub Pages</small>
+    </footer>
+  </main>
+
+  <script>document.getElementById('ano').textContent = new Date().getFullYear()</script>
+</body>
+</html>
