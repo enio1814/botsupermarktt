@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShopIA - Automação para Supermercados</title>
+  <title>ShopIA - Automação Inteligente para Supermercados</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #0b0b0f;
       color: white;
+      scroll-behavior: smooth;
     }
     header {
       background: #000;
       text-align: center;
       padding: 25px;
+      border-bottom: 2px solid #a855f7;
     }
     img.logo {
       width: 180px;
@@ -27,7 +29,7 @@
       color: #c084fc;
     }
     p {
-      max-width: 700px;
+      max-width: 750px;
       margin: 15px auto;
       line-height: 1.6;
       color: #ccc;
@@ -52,6 +54,42 @@
       padding: 20px;
       font-size: 0.9em;
       color: #888;
+      border-top: 1px solid #222;
+    }
+    .img-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .img-section img {
+      width: 320px;
+      border-radius: 15px;
+      border: 2px solid #a855f7;
+      box-shadow: 0 0 10px #a855f7;
+    }
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
@@ -63,29 +101,58 @@
   <section id="inicio">
     <h1>Automação Inteligente para Supermercados</h1>
     <p>
-      A <strong>ShopIA</strong> conecta o seu supermercado ao futuro.  
-      Nosso bot de atendimento automatiza pedidos, agiliza o caixa e melhora a experiência dos clientes — tudo pelo WhatsApp.
+      A <strong>ShopIA</strong> é a solução completa de automação para supermercados.  
+      Nosso sistema com inteligência artificial faz o atendimento, registra pedidos e envia direto para o caixa — tudo pelo WhatsApp.
     </p>
     <a href="https://wa.me/5599999999999" target="_blank" class="btn">Falar no WhatsApp</a>
   </section>
 
+  <section id="sobre">
+    <h2>Sobre a ShopIA</h2>
+    <p>
+      A ShopIA nasceu com o propósito de revolucionar o varejo alimentar.  
+      Combinamos tecnologia de ponta com simplicidade para que qualquer mercado, pequeno ou grande, possa automatizar o atendimento e aumentar as vendas.
+    </p>
+    <div class="img-section">
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/00/36/supermarket-2588024_960_720.jpg" alt="supermercado">
+      <img src="https://cdn.pixabay.com/photo/2020/05/29/19/12/ai-5231610_960_720.jpg" alt="inteligência artificial">
+      <img src="https://cdn.pixabay.com/photo/2016/10/22/17/09/chat-1767646_960_720.jpg" alt="chatbot">
+    </div>
+  </section>
+
   <section id="vantagens">
     <h2>Por que escolher a ShopIA?</h2>
-    <p>✅ Atendimento 100% automático 24h por dia.</p>
-    <p>✅ Receba pedidos direto no caixa.</p>
-    <p>✅ Sem fila, sem erros, mais vendas.</p>
-    <p>✅ Integração fácil com qualquer sistema de mercado.</p>
+    <p>✅ Atendimento automático 24 horas por dia.</p>
+    <p>✅ Pedidos enviados direto ao sistema de caixa.</p>
+    <p>✅ Aumente suas vendas e reduza filas.</p>
+    <p>✅ Relatórios automáticos e integração com sistemas ERP.</p>
+  </section>
+
+  <section id="funciona">
+    <h2>Como Funciona?</h2>
+    <p>
+      O cliente envia mensagem pelo WhatsApp → o bot entende o pedido → confirma itens e valores → envia ao caixa.  
+      Tudo isso sem precisar de atendente humano!
+    </p>
+    <div class="img-section">
+      <img src="https://cdn.pixabay.com/photo/2017/06/22/16/47/whatsapp-2438453_960_720.jpg" alt="whatsapp bot">
+      <img src="https://cdn.pixabay.com/photo/2020/06/15/15/41/automation-5300380_960_720.jpg" alt="automação supermercado">
+    </div>
   </section>
 
   <section id="contato">
     <h2>Entre em contato</h2>
-    <p>Quer testar o bot no seu supermercado?</p>
-    <p>Fale conosco pelo WhatsApp e veja a automação funcionando na prática.</p>
+    <p>
+      Quer testar o bot da ShopIA no seu supermercado?  
+      Clique no botão abaixo e fale diretamente com nossa equipe pelo WhatsApp.
+    </p>
     <a href="https://wa.me/5599999999999" target="_blank" class="btn">Testar Agora</a>
   </section>
 
   <footer>
     © 2025 ShopIA — Automação Inteligente para Supermercados.
   </footer>
+
+  <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
