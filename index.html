@@ -8,87 +8,106 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #0b0b0f;
+      background-color: #0d0d0d;
       color: white;
-      scroll-behavior: smooth;
-    }
-    header {
-      background: #000;
       text-align: center;
-      padding: 25px;
-      border-bottom: 2px solid #a855f7;
     }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+    }
+
     img.logo {
       width: 180px;
     }
-    section {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    h1, h2 {
+
+    h1, h2, h3 {
       color: #c084fc;
     }
+
     p {
-      max-width: 750px;
+      max-width: 700px;
       margin: 15px auto;
       line-height: 1.6;
-      color: #ccc;
+      color: #ddd;
     }
+
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
+      margin-top: 15px;
+      padding: 12px 25px;
       background: #a855f7;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 8px;
       font-weight: bold;
       transition: background 0.3s;
     }
     .btn:hover {
       background: #9333ea;
     }
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-      border-top: 1px solid #222;
-    }
+
     .img-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 25px;
-      margin-top: 30px;
+      gap: 20px;
+      margin: 40px 0;
     }
+
     .img-section img {
-      width: 320px;
-      border-radius: 15px;
-      border: 2px solid #a855f7;
+      width: 300px;
+      height: 200px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid #c084fc;
       box-shadow: 0 0 10px #a855f7;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      text-decoration: none;
       transition: transform 0.3s;
-      z-index: 1000;
     }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
+
+    .img-section img:hover {
+      transform: scale(1.05);
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .plan {
+      background: #111;
+      border: 1px solid #a855f7;
+      border-radius: 16px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 0 15px #a855f7;
+      transition: transform 0.3s;
+    }
+
+    .plan:hover {
+      transform: translateY(-8px);
+    }
+
+    .plan h3 {
+      color: #c084fc;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      color: #bbb;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
@@ -97,61 +116,60 @@
     <img src="logo.png" alt="ShopIA logo" class="logo">
   </header>
 
-  <section id="inicio">
+  <main>
     <h1>Automação Inteligente para Supermercados</h1>
     <p>
-      A <strong>ShopIA</strong> é a solução completa de automação para supermercados.  
-      Nosso sistema com inteligência artificial faz o atendimento, registra pedidos e envia direto para o caixa — tudo pelo WhatsApp.
+      A <strong>ShopIA</strong> conecta o seu supermercado ao futuro.
+      Nosso bot de atendimento automatiza pedidos, agiliza o caixa e melhora a experiência dos clientes — tudo pelo WhatsApp.
     </p>
     <a href="https://wa.me/5599999999999" target="_blank" class="btn">Falar no WhatsApp</a>
-  </section>
 
-  <section id="sobre">
     <h2>Sobre a ShopIA</h2>
     <p>
-      A ShopIA nasceu para revolucionar o varejo alimentar, unindo tecnologia e praticidade.  
-      Nosso sistema é fácil de usar, rápido de integrar e pronto para aumentar as vendas do seu mercado.
+      A ShopIA nasceu para revolucionar o varejo alimentar, unindo tecnologia e praticidade. Nosso sistema é fácil de usar, rápido de integrar e pronto para aumentar as vendas do seu mercado.
     </p>
-    <div class="img-section">
-      <img src="https://i.imgur.com/tL3VYHv.jpeg" alt="Supermercado moderno">
-      <img src="https://i.imgur.com/lfbWqnl.jpeg" alt="Inteligência artificial bot">
-      <img src="https://i.imgur.com/W1vWZVG.jpeg" alt="Chatbot atendimento">
-    </div>
-  </section>
 
-  <section id="vantagens">
+    <div class="img-section">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e17c?auto=format&fit=crop&w=800&q=80" alt="Supermercado moderno">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d9?auto=format&fit=crop&w=800&q=80" alt="IA no atendimento">
+      <img src="https://images.unsplash.com/photo-1601597111063-3e06a0141b1b?auto=format&fit=crop&w=800&q=80" alt="Chatbot de mercado">
+    </div>
+
     <h2>Por que escolher a ShopIA?</h2>
-    <p>✅ Atendimento automático 24 horas por dia.</p>
-    <p>✅ Pedidos enviados direto ao sistema de caixa.</p>
-    <p>✅ Aumente suas vendas e reduza filas.</p>
-    <p>✅ Relatórios automáticos e integração com sistemas ERP.</p>
-  </section>
-
-  <section id="funciona">
-    <h2>Como Funciona?</h2>
     <p>
-      O cliente envia mensagem pelo WhatsApp → o bot entende o pedido → confirma itens e valores → envia ao caixa.  
-      Tudo isso sem precisar de atendente humano!
+      💡 Atendimento automático via WhatsApp <br>
+      ⚙️ Integração com sistema de caixa <br>
+      🚀 Aumento nas vendas e fidelização de clientes <br>
+      🔒 Segurança e estabilidade 24h
     </p>
-    <div class="img-section">
-      <img src="https://i.imgur.com/ItQUw2t.jpeg" alt="WhatsApp bot">
-      <img src="https://i.imgur.com/PKG0PNV.jpeg" alt="Automação supermercado">
+
+    <h2>Planos e Preços</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Plano Básico</h3>
+        <p>Ideal para pequenos mercados que estão começando no digital.</p>
+        <p><strong>R$ 49/mês</strong></p>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn">Assinar</a>
+      </div>
+
+      <div class="plan">
+        <h3>Plano Avançado</h3>
+        <p>Mais automações, relatórios e suporte prioritário.</p>
+        <p><strong>R$ 99/mês</strong></p>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn">Assinar</a>
+      </div>
+
+      <div class="plan">
+        <h3>Plano Premium</h3>
+        <p>Tudo ilimitado + integração completa com caixa e estoque.</p>
+        <p><strong>R$ 149/mês</strong></p>
+        <a href="https://wa.me/5599999999999" target="_blank" class="btn">Assinar</a>
+      </div>
     </div>
-  </section>
-
-  <section id="contato">
-    <h2>Entre em contato</h2>
-    <p>
-      Quer testar o bot da ShopIA no seu supermercado?  
-      Clique no botão abaixo e fale diretamente com nossa equipe pelo WhatsApp.
-    </p>
-    <a href="https://wa.me/5599999999999" target="_blank" class="btn">Testar Agora</a>
-  </section>
+  </main>
 
   <footer>
-    © 2025 ShopIA — Automação Inteligente para Supermercados.
+    © 2025 ShopIA — Todos os direitos reservados.
   </footer>
-
-  <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
