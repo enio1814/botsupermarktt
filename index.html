@@ -4,34 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopIA - Automação para Supermercados</title>
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.png" />
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #0d0d0d;
-      color: white;
+      color: #fff;
       text-align: center;
     }
 
     header {
       background-color: #000;
-      padding: 25px;
+      padding: 20px;
     }
 
     img.logo {
-      width: 180px;
+      width: 190px;
     }
 
     h1 {
       color: #c084fc;
-      font-size: 2.2em;
+      font-size: 2.3em;
       margin-top: 30px;
-    }
-
-    h2 {
-      color: #c084fc;
-      margin-top: 50px;
     }
 
     p {
@@ -41,31 +36,55 @@
       color: #ddd;
     }
 
-    .planos {
+    .galeria {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 25px;
-      margin-top: 30px;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .galeria img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 2px solid #a855f7;
+      box-shadow: 0 0 15px #a855f7;
+    }
+
+    .planos {
+      margin-top: 60px;
+      background-color: #111;
+      padding: 40px 0;
     }
 
     .plano {
-      background-color: #1a1a1a;
-      border: 1px solid #a855f7;
-      border-radius: 12px;
-      width: 260px;
-      padding: 25px;
-      box-shadow: 0 0 12px #a855f777;
+      background: #1a1a1a;
+      border: 2px solid #a855f7;
+      border-radius: 15px;
+      display: inline-block;
+      width: 270px;
+      margin: 15px;
+      padding: 20px;
+      color: #eee;
+      box-shadow: 0 0 10px #7e22ce;
     }
 
     .plano h3 {
-      color: #a855f7;
+      color: #c084fc;
+      font-size: 1.4em;
+    }
+
+    .plano p {
+      font-size: 0.95em;
     }
 
     .btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 20px;
+      padding: 12px 25px;
       background: #a855f7;
       color: white;
       text-decoration: none;
@@ -78,37 +97,36 @@
       background: #9333ea;
     }
 
-    .galeria {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .galeria img {
-      width: 300px;
-      border-radius: 10px;
-      border: 2px solid #a855f7;
-    }
-
     footer {
       margin-top: 60px;
       padding: 20px;
-      background: #000;
-      color: #aaa;
       font-size: 0.9em;
+      color: #888;
     }
 
-    .social-icons img {
-      width: 30px;
+    .social {
+      margin-top: 20px;
+    }
+
+    .social a {
       margin: 0 10px;
-      vertical-align: middle;
-      filter: invert(82%) sepia(60%) saturate(523%) hue-rotate(217deg);
+      display: inline-block;
+      text-decoration: none;
     }
 
+    .social img {
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
+
 <body>
   <header>
     <img src="logo.png" alt="ShopIA logo" class="logo">
@@ -117,53 +135,56 @@
   <main>
     <h1>Automação Inteligente para Supermercados</h1>
     <p>
-      A <strong>ShopIA</strong> transforma o atendimento do seu supermercado com inteligência artificial.  
-      Nosso bot automatiza pedidos, agiliza o caixa e melhora a experiência dos clientes — tudo direto no WhatsApp.
-    </p>
-
-    <h2>Sobre a ShopIA</h2>
-    <p>
-      Nascemos para revolucionar o varejo alimentar, unindo tecnologia e praticidade.  
-      Nosso sistema é simples de usar, rápido de integrar e pronto para aumentar suas vendas.
+      A <strong>ShopIA</strong> nasceu para revolucionar o varejo alimentar, unindo tecnologia e praticidade.
+      Nosso sistema é fácil de usar, rápido de integrar e pronto para aumentar as vendas do seu mercado.
     </p>
 
     <div class="galeria">
-      <img src="https://media.istockphoto.com/id/2214750916/pt/foto/retrato-de-mulher-feliz-comprando-mantimentos-no-supermercado-e-olhando-para-a-c%C3%A2mera.jpg?s=2048x2048&w=is&k=20&c=YErZ1H9A5yLTxhF0P-WgkYqGBtXLihOFGHSCkAmMDJ0=" alt="Cliente feliz no supermercado">
-      <img src="https://images.unsplash.com/photo-1601972602223-6e9b3c59c4d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pagamento por celular">
-      <img src="https://images.unsplash.com/photo-1601972599720-5b64d5cc5b59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Atendimento rápido no caixa">
+      <img src="img1.avif" alt="Supermercado 1">
+      <img src="img2.avif" alt="Supermercado 2">
+      <img src="img3.avif" alt="Supermercado 3">
     </div>
 
-    <h2>Planos ShopIA</h2>
-    <div class="planos">
+    <section class="planos">
+      <h2 style="color:#c084fc;">Nossos Planos</h2>
       <div class="plano">
         <h3>Plano Básico</h3>
-        <p>R$ 79/mês<br>Até 100 pedidos/mês</p>
-        <a href="https://wa.me/5584994219173?text=Olá! Quero assinar o *Plano Básico* da ShopIA (R$79/mês - 100 pedidos)." target="_blank" class="btn">Assinar</a>
+        <p>💰 R$79/mês<br>✅ 100 pedidos/mês</p>
+        <a href="https://wa.me/5584994219173?text=Olá!%20Tenho%20interesse%20no%20Plano%20Básico%20da%20ShopIA%20de%20R$79" class="btn">Assinar</a>
       </div>
+
       <div class="plano">
         <h3>Plano Avançado</h3>
-        <p>R$ 150/mês<br>Até 400 pedidos/mês</p>
-        <a href="https://wa.me/5584994219173?text=Olá! Quero assinar o *Plano Avançado* da ShopIA (R$150/mês - 400 pedidos)." target="_blank" class="btn">Assinar</a>
+        <p>💰 R$150/mês<br>✅ 400 pedidos/mês</p>
+        <a href="https://wa.me/5584994219173?text=Olá!%20Quero%20assinar%20o%20Plano%20Avançado%20da%20ShopIA%20de%20R$150" class="btn">Assinar</a>
       </div>
+
       <div class="plano">
         <h3>Plano Premium</h3>
-        <p>R$ 300/mês<br>Pedidos ilimitados</p>
-        <a href="https://wa.me/5584994219173?text=Olá! Quero assinar o *Plano Premium* da ShopIA (R$300/mês - pedidos ilimitados)." target="_blank" class="btn">Assinar</a>
+        <p>💰 R$300/mês<br>🚀 Pedidos ilimitados</p>
+        <a href="https://wa.me/5584994219173?text=Olá!%20Desejo%20assinar%20o%20Plano%20Premium%20da%20ShopIA%20de%20R$300" class="btn">Assinar</a>
       </div>
-    </div>
 
-    <h2>Experimente grátis</h2>
-    <p>Teste o sistema completo da ShopIA por 7 dias sem compromisso!</p>
-    <a href="https://wa.me/5584994219173?text=Olá! Quero fazer o *teste grátis de 7 dias* da ShopIA!" target="_blank" class="btn">Teste grátis por 7 dias</a>
+      <div class="plano" style="border-color:#22c55e;box-shadow:0 0 10px #22c55e;">
+        <h3 style="color:#22c55e;">Teste Grátis</h3>
+        <p>🎁 7 dias gratuitos<br>💬 Experimente sem compromisso</p>
+        <a href="https://wa.me/5584994219173?text=Olá!%20Gostaria%20de%20testar%20a%20ShopIA%20gratuitamente%20por%207%20dias!" class="btn" style="background:#22c55e;">Testar Grátis</a>
+      </div>
+    </section>
+
+    <div class="social">
+      <a href="https://wa.me/5584994219173" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="#" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+    </div>
 
   </main>
 
   <footer>
-    <div class="social-icons">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram"></a>
-      <a href="https://wa.me/5584994219173" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-    </div>
-    <p>© 2025 ShopIA — Todos os direitos reservados.</p>
+    © 2025 ShopIA — Todos os direitos reservados.
   </footer>
 </body>
 </html>
