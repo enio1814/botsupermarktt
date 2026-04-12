@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Automação Empresarial</title>
+<title>Automação Empresarial | Bots e Sites</title>
 
 <style>
 
@@ -15,43 +16,73 @@ background:#0d0d0d;
 color:white;
 }
 
+/* HEADER */
+
 header {
-padding:20px;
-text-align:center;
-font-size:24px;
-font-weight:bold;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#111;
 }
+
+.logo {
+font-size:22px;
+font-weight:bold;
+color:#00ff88;
+}
+
+.menu a {
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:14px;
+}
+
+/* HERO */
 
 .hero {
 text-align:center;
-padding:80px 20px;
+padding:100px 20px;
+background:linear-gradient(180deg,#0d0d0d,#111);
 }
 
 .hero h1 {
-font-size:40px;
+font-size:42px;
 margin-bottom:20px;
 }
 
 .hero p {
 font-size:18px;
 color:#aaa;
+max-width:600px;
+margin:auto;
 }
 
 .btn {
 background:#00ff88;
 color:black;
-padding:15px 30px;
-text-decoration:none;
-border-radius:8px;
+padding:15px 35px;
+border-radius:10px;
 font-weight:bold;
+text-decoration:none;
 display:inline-block;
-margin-top:20px;
+margin-top:30px;
 }
 
+/* SECTIONS */
+
 .section {
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
+
+.section h2 {
+font-size:30px;
+margin-bottom:20px;
+}
+
+/* CARDS */
 
 .cards {
 display:flex;
@@ -64,14 +95,23 @@ margin-top:40px;
 .card {
 background:#1a1a1a;
 padding:25px;
-border-radius:12px;
+border-radius:14px;
 width:250px;
+transition:0.3s;
 }
 
+.card:hover {
+transform:translateY(-5px);
+background:#222;
+}
+
+/* FOOTER */
+
 .footer {
-text-align:center;
-padding:40px;
 background:#111;
+padding:40px;
+text-align:center;
+color:#aaa;
 margin-top:40px;
 }
 
@@ -81,9 +121,26 @@ margin-top:40px;
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
+<div class="logo">
 AUTOMAÇÃO EMPRESARIAL
+</div>
+
+<div class="menu">
+
+<a href="#servicos">Serviços</a>
+<a href="#empresas">Empresas</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#contato">Contato</a>
+
+</div>
+
 </header>
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -92,12 +149,13 @@ Automatize seu negócio com tecnologia
 </h1>
 
 <p>
-Bots de WhatsApp, Sites e Sistemas
-para aumentar suas vendas e economizar tempo.
+Bots de WhatsApp, criação de sites e automação empresarial
+para aumentar vendas e reduzir trabalho manual.
 </p>
 
 <a class="btn"
-href="https://wa.me/5584999999999">
+href="https://wa.me/5584994219173"
+target="_blank">
 
 Falar no WhatsApp
 
@@ -105,91 +163,173 @@ Falar no WhatsApp
 
 </section>
 
-<section class="section">
+<!-- SERVIÇOS -->
+
+<section class="section" id="servicos">
 
 <h2>Serviços</h2>
 
 <div class="cards">
 
 <div class="card">
-🤖<br><br>
-Bot de WhatsApp
+
+<h3>🤖 Bot de WhatsApp</h3>
+
+<p>
+Automatize atendimento, pedidos e respostas
+24 horas por dia.
+</p>
+
 </div>
 
 <div class="card">
-🌐<br><br>
-Criação de Sites
+
+<h3>🌐 Criação de Sites</h3>
+
+<p>
+Sites profissionais para empresas
+que desejam crescer online.
+</p>
+
 </div>
 
 <div class="card">
-⚙️<br><br>
-Automação Empresarial
+
+<h3>⚙️ Automação Empresarial</h3>
+
+<p>
+Processos automáticos que reduzem
+tempo e erros manuais.
+</p>
+
 </div>
 
 <div class="card">
-📊<br><br>
-Sistemas Personalizados
+
+<h3>📊 Sistemas Personalizados</h3>
+
+<p>
+Desenvolvimento de soluções
+sob medida para sua empresa.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<!-- EMPRESAS -->
+
+<section class="section" id="empresas">
 
 <h2>Automação para Empresas</h2>
 
 <div class="cards">
 
 <div class="card">
-🏋️ Academia
+
+<h3>🏋️ Academias</h3>
+
+<p>
+Controle de planos, alunos
+e atendimento automático.
+</p>
+
 </div>
 
 <div class="card">
-🏥 Clínica
+
+<h3>🏥 Clínicas</h3>
+
+<p>
+Agendamento automático
+e confirmação de consultas.
+</p>
+
 </div>
 
 <div class="card">
-🍔 Restaurante
+
+<h3>🍔 Restaurantes</h3>
+
+<p>
+Pedidos automatizados
+e cardápio digital.
+</p>
+
 </div>
 
 <div class="card">
-🛒 Supermercado
+
+<h3>🛒 Supermercados</h3>
+
+<p>
+Pedidos online
+direto pelo WhatsApp.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<!-- BENEFÍCIOS -->
+
+<section class="section" id="beneficios">
 
 <h2>Benefícios</h2>
 
 <div class="cards">
 
 <div class="card">
-Atendimento automático 24h
+✔ Atendimento automático 24h
 </div>
 
 <div class="card">
-Mais vendas
+✔ Mais vendas e produtividade
 </div>
 
 <div class="card">
-Menos trabalho manual
+✔ Redução de custos operacionais
 </div>
 
 <div class="card">
-Profissionalismo
+✔ Atendimento profissional
 </div>
 
 </div>
 
 </section>
 
+<!-- CONTATO -->
+
+<section class="section" id="contato">
+
+<h2>Entre em Contato</h2>
+
+<p>
+Fale conosco agora mesmo e descubra
+como automatizar sua empresa.
+</p>
+
+<a class="btn"
+href="https://wa.me/5584994219173"
+target="_blank">
+
+Falar no WhatsApp
+
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
 <div class="footer">
 
-© Automação Empresarial
+© 2026 Automação Empresarial  
+Todos os direitos reservados
 
 </div>
 
