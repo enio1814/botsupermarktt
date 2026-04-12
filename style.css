@@ -1,0 +1,220 @@
+body {
+
+margin:0;
+font-family:Arial;
+background:#0d0d0d;
+color:white;
+
+}
+
+/* HEADER */
+
+header {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:#140020;
+
+border-bottom:2px solid purple;
+
+}
+
+.logo img {
+
+height:50px;
+
+}
+
+nav a {
+
+color:white;
+margin-left:20px;
+text-decoration:none;
+
+}
+
+nav a:hover {
+
+color:#a855f7;
+
+}
+
+/* HERO */
+
+.hero {
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:60px 40px;
+
+}
+
+.hero-text {
+
+max-width:500px;
+
+}
+
+.hero-text h1 {
+
+font-size:40px;
+color:#a855f7;
+
+}
+
+.hero-text p {
+
+margin:20px 0;
+
+}
+
+.hero-img img {
+
+width:400px;
+border-radius:12px;
+
+}
+
+/* BOTÃO */
+
+.btn-whatsapp {
+
+background:#a855f7;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+color:white;
+
+display:inline-block;
+
+}
+
+/* SERVIÇOS */
+
+#servicos {
+
+padding:60px 40px;
+
+text-align:center;
+
+}
+
+.grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card {
+
+background:#1a002b;
+
+padding:20px;
+
+border-radius:12px;
+
+transition:0.3s;
+
+}
+
+.card img {
+
+width:100%;
+
+border-radius:10px;
+
+margin-bottom:15px;
+
+}
+
+.card:hover {
+
+transform:translateY(-5px);
+
+box-shadow:0 0 20px purple;
+
+}
+
+/* BENEFÍCIOS */
+
+#beneficios {
+
+padding:60px 40px;
+
+background:#140020;
+
+text-align:center;
+
+}
+
+.benefits {
+
+display:flex;
+
+gap:20px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.benefit {
+
+background:#1a002b;
+
+padding:20px;
+
+border-radius:10px;
+
+width:250px;
+
+}
+
+/* CONTATO */
+
+#contato {
+
+padding:60px 40px;
+
+text-align:center;
+
+}
+
+/* WHATSAPP FIXO */
+
+.whatsapp-fixo {
+
+position:fixed;
+
+bottom:20px;
+right:20px;
+
+background:#a855f7;
+
+padding:15px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+}
